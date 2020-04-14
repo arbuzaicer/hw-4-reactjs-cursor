@@ -9,7 +9,7 @@ import {
   FaSass,
   DiJavascript1,
 } from "react-icons/all";
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import reduxIcon from '@iconify/icons-simple-icons/redux';
 import webpackIcon from '@iconify/icons-simple-icons/webpack';
 import netlifyIcon from '@iconify/icons-simple-icons/netlify';

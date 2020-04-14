@@ -25,6 +25,7 @@ const Social = () => {
         <a
           className="gmail"
           target="_blank"
+          rel="noopener noreferrer"
           href="mailto:maxpachinov@gmail.com"
         >
           <AiFillGoogleCircle />
@@ -32,6 +33,7 @@ const Social = () => {
         <a
           className="skype"
           target="_blank"
+          rel="noopener noreferrer"
           href="mailto:maxpachinov@gmail.com"
         >
           <AiFillSkype />
@@ -39,6 +41,7 @@ const Social = () => {
         <a
           className="fb"
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.facebook.com/pachinov"
         >
           <FaFacebookSquare />
@@ -46,11 +49,12 @@ const Social = () => {
         <a
           className="linkedin"
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.linkedin.com/in/max-pashynov-080a451a1/"
         >
           <FaLinkedin />
         </a>
-        <a className="git" target="_blank" href="https://github.com/arbuzaicer">
+        <a className="git" target="_blank" rel="noopener noreferrer" href="https://github.com/arbuzaicer">
           <FaGitSquare />
         </a>
       </nav>

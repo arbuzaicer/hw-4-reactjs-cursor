@@ -20,7 +20,7 @@ const About = () => {
         <p>
           I have a higher education diploma in nuclear energy. In 2016 I
           graduated from{" "}
-          <a target="_blank" href="https://kpi.ua/">
+          <a target="_blank" rel="noopener noreferrer" href="https://kpi.ua/">
             "Kyiv Polytechnic Institute"
           </a>
           . From 2016-2020 I worked at a research institute in the city of
@@ -35,7 +35,7 @@ const About = () => {
           completing the basic course in layout, I began to learn the basics of
           Javascript. Then the basics of React JS. After acquiring basic
           programming knowledge, I found front-end development courses from{" "}
-          <a target="_blank" href="https://cursor.education/uk">
+          <a target="_blank" rel="noopener noreferrer" href="https://cursor.education/uk">
             Cursor
           </a>{" "}
           and continuously improve myself in various aspects of programming.

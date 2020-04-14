@@ -1,0 +1,36 @@
+@import "../../variables";
+
+a {
+  text-decoration: none;
+}
+.user-single {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 9fr;
+  background: $contacts-link-bg;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 0.25s;
+  &__icon {
+    margin-left: 10px;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+  }
+  &__gender {
+    align-self: center;
+    justify-self: center;
+    color: $text-main-color;
+    font-size: 1.4em;
+  }
+  &__data {
+    margin-left: 20px;
+    align-self: center;
+    color: $text-main-color;
+    p {
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    background: $contacts-link-bg-hover;
+  }
+}

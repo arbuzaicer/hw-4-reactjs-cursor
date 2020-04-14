@@ -1,0 +1,66 @@
+.technologies-list {
+  display: flex;
+  justify-content: space-between;
+  li {
+    list-style: none;
+    transition: 0.5s;
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .js {
+    svg {
+      background: yellow;
+      color: black;
+    }
+  }
+  .node {
+    svg {
+      color: #519a41;
+    }
+  }
+  .react {
+    svg {
+      color: #5ed4f4;
+    }
+  }
+  .redux {
+    svg {
+      color: #7348b7;
+    }
+  }
+  .webpack {
+    svg {
+      color: #8acff3;
+    }
+  }
+  .netlify {
+    svg {
+      color: #00c3b2;
+    }
+  }
+  .html5 {
+    svg {
+      color: #de4b25;
+    }
+  }
+  .css3 {
+    svg {
+      color: #1a70b5;
+    }
+  }
+  .sass {
+    svg {
+      color: #c76495;
+    }
+  }
+  .git {
+    svg {
+      color: #e94c34;
+    }
+  }
+}

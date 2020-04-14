@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+#filled-basic {
+  width: 60vw;
+  color: $text-main-color;
+}
+
+.MuiInputLabel-filled {
+  color: $text-main-color !important;
+}
+
+.contacts {
+  width: 60vw;
+  padding: 10px 12px;
+  min-height: 60vh;
+  background: $contacts-section-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-failed {
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  #filled-basic {
+    width: 80vw;
+  }
+  .contacts {
+    width: 86.5vw;
+  }
+  .contacts-section {
+    margin-top: 50px;
+  }
+}

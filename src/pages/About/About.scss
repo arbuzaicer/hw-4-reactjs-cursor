@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.about {
+  display: flex;
+  font-family: $home-page-font;
+}
+
+.description-about {
+  width: 50%;
+  p {
+    text-align: justify;
+    a {
+      text-decoration: none;
+      color: $main-green;
+      font-weight: 700;
+      font-size: 1.2em;
+      transition: 0.4s;
+      &:hover {
+        color: #4ec693;
+      }
+    }
+  }
+}
+.slider-section {
+  width: 50%;
+}
+@media (max-width: 560px) {
+  .about {
+    margin-top: 70px;
+    flex-direction: column-reverse;
+  }
+  .description-about {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .slider-section {
+    width: 100%;
+    height: 300px;
+  }
+}

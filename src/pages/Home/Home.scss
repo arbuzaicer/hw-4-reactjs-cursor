@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: $home-page-font;
+    .description-section {
+        font-size: 2em;
+        .custom-text {
+            color: $main-green;
+        }
+    }
+    .image-section {
+        img {
+            height: 25em;
+            width: 25em;
+        }
+    }
+    .technologies {
+        display: grid;
+        grid-column: 1/3;
+        width: 100%;
+        h2 {
+            margin-bottom: 2em;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .home {
+        .image-section {
+            img {
+                position: fixed;
+                top: 45%;
+                right: 10px;
+                height: 5em;
+                width: 5em;
+                border-radius: 50%;
+            }
+        }
+        .description-section {
+            grid-column: 1/4;
+        }
+        .technologies {
+            margin-top: 100px;
+        }
+    }
+}

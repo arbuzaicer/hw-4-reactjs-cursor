@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import { routes } from './routes';
+import { AnimatePresence } from 'framer-motion';
 
-function App() {
+import Layout from './components/Layout';
+import Social from './components/Social';
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Layout>
+            <Social />
+            <AnimatePresence exitBeforeEnter>
+                <Switch>
+                    {routes.map((item, index) => (
+                        <Route
+                            key={index + Date.now()}
+                            exact={item.exact}
+                            path={item.path}
+                            component={item.component}
+                        />
+                    ))}
+                </Switch>
+            </AnimatePresence>
+        </Layout>
   );
-}
+};
 
 export default App;

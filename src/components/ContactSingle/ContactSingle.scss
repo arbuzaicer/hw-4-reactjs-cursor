@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.contact-btn__back {
+  svg {
+    color: $text-main-color;
+    font-size: 2em;
+    transition: 0.5s;
+    &:hover {
+      color: #778076;
+    }
+  }
+}
